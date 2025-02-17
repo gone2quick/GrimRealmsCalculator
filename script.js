@@ -18,3 +18,18 @@ function calculateValue() {
     // Update the result on the webpage
     document.getElementById('result').innerText = value;
 }
+
+// Function to toggle between dark and light modes
+function toggleDarkMode() {
+    const body = document.body;
+    const darkModeButton = document.getElementById('darkModeToggle');
+
+    body.classList.toggle('dark-mode');
+    
+    // Toggle the button text between 'Dark Mode' and 'Light Mode'
+    if (body.classList.contains('dark-mode')) {
+        darkModeButton.innerText = 'Switch to Light Mode';
+    } else {
+        darkModeButton.innerText = 'Switch to Dark Mode';
+    }
+}
