@@ -4,22 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grim Realms Calculator</title>
-    <link rel="icon" href="grim-realms-icon.ico" type="image/x-icon">
-    <script src="script.js" defer></script> <!-- Link to the external JS file -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <script src="script.js" defer></script> <!-- Link to external JS file -->
 </head>
 <body>
-    <h1>Grid Value Calculator</h1>
-    
-    <label for="row">Row: </label>
-    <input type="number" id="row" min="0" value="0">
-    <br>
+    <div class="container">
+        <h1>Grid Value Calculator</h1>
 
-    <label for="col">Column: </label>
-    <input type="number" id="col" min="0" value="0">
-    <br>
+        <label for="row">Row: </label>
+        <input type="number" id="row" min="0" value="1">
+        <br>
 
-    <button onclick="calculateValue()">Get Value</button>
-    
-    <h2>Value: <span id="result">-</span></h2>
+        <label for="col">Column: </label>
+        <input type="number" id="col" min="0" value="0">
+        <br>
+
+        <button onclick="calculateValue()">Get Value</button>
+        
+        <h2>Value: <span id="result">-</span></h2>
+
+        <!-- Dark Mode Toggle Button -->
+        <button id="darkModeToggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    </div>
 </body>
 </html>
