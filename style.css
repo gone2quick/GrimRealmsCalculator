@@ -54,15 +54,15 @@ body.dark-mode {
 }
 
 body.dark-mode .container {
-    background-color: #1c1c1c;
+    background-color: #080808;
     color: white;
 }
 
 body.dark-mode button {
-    background-color: #444;
+    background-color: #080808;
     color: white;
 }
 
 body.dark-mode button:hover {
-    background-color: #555;
+    background-color: #080808;
 }
