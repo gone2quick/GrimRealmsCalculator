@@ -17,4 +17,4 @@ function calculateValue() {
     
     // Update the result on the webpage
     document.getElementById('result').innerText = value;
-}7
+}
